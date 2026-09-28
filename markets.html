@@ -1,0 +1,79 @@
+---
+layout: "default"
+slug: "markets"
+title: "Live Crypto Prices — Top 100 Coins, Heatmap & Top-10 Index"
+full_title: "Live Crypto Prices — Top 100 Coins, Heatmap & Top-10 Index | 10Coin"
+desc: "Live cryptocurrency prices for the top 100 coins by market cap with 1h/24h/7d change, sparklines, watchlist, gainers, losers, heatmap and Fear & Greed."
+canon: "/markets.html"
+scripts: ["assets/js/markets.js"]
+priority: "0.9"
+---
+<section class="page-hero"><div class="container">
+  <div class="breadcrumbs"><a href="index.html">Home</a> / Markets</div>
+  <h1>Live crypto markets</h1>
+  <p>Top 100 cryptocurrencies by market cap, refreshed every few minutes. Star coins to build a private watchlist (saved in your browser).</p>
+</div></section>
+
+<div class="container">
+  <div class="grid g4">
+    <div class="card stat"><div class="label">Total market cap</div><div class="value num" id="g-mcap">—</div></div>
+    <div class="card stat"><div class="label">24h volume</div><div class="value num" id="g-vol">—</div></div>
+    <div class="card stat"><div class="label">BTC dominance</div><div class="value num" id="g-btc">—</div></div>
+    <div class="card stat"><div class="label">Active cryptocurrencies</div><div class="value num" id="g-coins">—</div></div>
+  </div>
+  <div class="ad-slot" data-slot="header"></div>
+</div>
+
+<section style="padding-top:10px"><div class="container">
+  <div class="table-tools">
+    <input id="coin-search" class="search" type="search" placeholder="Search coin or symbol…" aria-label="Search coins">
+    <div class="pill-row" role="tablist">
+      <button class="pill active" data-filter="all">All</button>
+      <button class="pill" data-filter="nostable">No stablecoins</button>
+      <button class="pill" data-filter="watch">★ Watchlist</button>
+      <button class="pill" data-filter="gainers">Top gainers</button>
+      <button class="pill" data-filter="losers">Top losers</button>
+    </div>
+    <label class="sr-only" for="currency">Currency</label>
+    <select id="currency" style="width:auto"><option value="usd">USD</option><option value="cad">CAD</option><option value="eur">EUR</option><option value="gbp">GBP</option><option value="inr">INR</option><option value="aud">AUD</option></select>
+  </div>
+  <div class="table-wrap" style="max-height:78vh"><table id="market-table"></table></div>
+  <p class="small muted" style="margin-top:8px"><span id="updated"></span> · Data: CoinGecko. Click column headers to sort.</p>
+</div></section>
+
+<section id="top10" class="alt"><div class="container">
+  <div class="grid g3">
+    <div class="card"><h3>10Coin Top-10 index</h3><p class="muted small">Equal-weighted average move of the 10 largest non-stable cryptocurrencies.</p>
+      <div class="stat" style="padding:6px 0"><div class="label">24h</div><div class="value" id="idx-24h">—</div></div>
+      <div class="stat" style="padding:6px 0"><div class="label">7 days</div><div class="value" id="idx-7d">—</div></div>
+      <div class="stat" style="padding:6px 0"><div class="label">Best performer today</div><div class="value" id="idx-best" style="font-size:1.1rem">—</div></div>
+    </div>
+    <div class="card"><h3>Fear &amp; Greed</h3><div id="fng"></div><p class="small muted center">Extreme fear can signal opportunity; extreme greed, caution.</p></div>
+    <div class="card"><h3>Trending now</h3><ul id="trending" style="list-style:none;padding:0;margin:0"></ul></div>
+  </div>
+</div></section>
+
+<section id="heat"><div class="container">
+  <div class="section-head"><div><span class="eyebrow">24h performance</span><h2>Market heatmap</h2></div></div>
+  <div class="heatmap" id="heatmap"></div>
+</div></section>
+
+<div class="container"><div class="ad-slot" data-slot="inContent"></div></div>
+
+<section><div class="container">
+  <div class="lead-band">
+    <div><span class="eyebrow">Portfolio check-up</span><h2>Holding crypto and not sure what to do next?</h2><p class="muted">Get connected with a vetted crypto-tax or portfolio specialist for a free first review — capital gains, record keeping, estate planning or safe storage.</p></div>
+    <a class="btn btn-primary" href="appraisal.html?item=crypto">Request a free portfolio review →</a>
+  </div>
+</div></section>
+
+<section class="alt"><div class="container prose">
+  <h2>How to read this table</h2>
+  <p><b>Market cap</b> = price × circulating supply and is the standard way to rank coins. <b>Volume</b> shows how much traded in 24 hours — low volume means prices can move sharply on small orders. The <b>7-day sparkline</b> shows the trend at a glance.</p>
+  <details data-faq><summary>How often are prices updated?</summary><p>The table refreshes automatically every 3 minutes while the page is open. Data comes from the CoinGecko public API.</p></details>
+  <details data-faq><summary>Is my watchlist private?</summary><p>Yes. Your watchlist is stored only in your own browser. Clearing your browser data removes it.</p></details>
+  <details data-faq><summary>Why are stablecoins filtered from the Top-10 index?</summary><p>Stablecoins are designed to hold a fixed value, so including them would dilute the index. Wrapped and staked versions of other coins are excluded for the same reason.</p></details>
+</div></section>
+<!-- auto:jsonld (regenerated by build/build.py) -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}{{ site.baseurl }}/"}, {"@type": "ListItem", "position": 2, "name": "Live Crypto Prices — Top 100 Coins, Heatmap & Top-10 Index", "item": "{{ site.url }}{{ site.baseurl }}/markets.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How often are prices updated?", "acceptedAnswer": {"@type": "Answer", "text": "The table refreshes automatically every 3 minutes while the page is open. Data comes from the CoinGecko public API."}}, {"@type": "Question", "name": "Is my watchlist private?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Your watchlist is stored only in your own browser. Clearing your browser data removes it."}}, {"@type": "Question", "name": "Why are stablecoins filtered from the Top-10 index?", "acceptedAnswer": {"@type": "Answer", "text": "Stablecoins are designed to hold a fixed value, so including them would dilute the index. Wrapped and staked versions of other coins are excluded for the same reason."}}]}</script>

@@ -1,0 +1,119 @@
+---
+layout: "default"
+slug: "index"
+title: "10Coin — Coin Values, Live Crypto & Bullion Prices, Free Valuations"
+full_title: "10Coin — Coin Values, Live Crypto & Bullion Prices, Free Valuations"
+desc: "What is your coin worth? Check collectible coin values, live top-10 crypto prices, gold & silver, free calculators and get a free expert coin valuation."
+canon: "/"
+scripts: ["assets/js/markets.js"]
+priority: "1.0"
+---
+<section class="hero"><div class="container hero-grid">
+  <div>
+    <span class="eyebrow">Coins · Crypto · Bullion</span>
+    <h1>What are your coins <span style="color:var(--brand)">really</span> worth?</h1>
+    <p class="lead">10Coin is your all-in-one coin intelligence hub: collectible coin values, live top-10 crypto markets, gold &amp; silver melt prices, pro calculators — and free expert valuations when you need a human.</p>
+    <form class="inline-form" action="appraisal.html" method="get" style="max-width:560px">
+      <label class="sr-only" for="hero-coin">Describe your coin</label>
+      <input id="hero-coin" name="coin" placeholder="e.g. 1943 penny, Morgan dollar, Bitcoin portfolio…">
+      <input type="hidden" name="item" value="coins">
+      <button class="btn btn-primary" type="submit">Get free valuation →</button>
+    </form>
+    <div class="trust-row" style="margin-top:16px"><span>100% free, no obligation</span><span>Reply within 48 hours</span><span>US · Canada · UK · Euro · India coins</span></div>
+  </div>
+  <div class="card" aria-label="Market snapshot">
+    <h3 style="display:flex;justify-content:space-between">Market snapshot <span class="badge gold">LIVE</span></h3>
+    <div class="grid g2" style="gap:10px">
+      <div class="stat" style="padding:10px 0"><div class="label">Crypto market cap</div><div class="value num" id="g-mcap" style="font-size:1.1rem">—</div></div>
+      <div class="stat" style="padding:10px 0"><div class="label">BTC dominance</div><div class="value num" id="g-btc" style="font-size:1.1rem">—</div></div>
+      <div class="stat" style="padding:10px 0"><div class="label">Top-10 index · 24h</div><div class="value num" id="idx-24h" style="font-size:1.1rem">—</div></div>
+      <div class="stat" style="padding:10px 0"><div class="label">Best top-10 today</div><div class="value num" id="idx-best" style="font-size:1.1rem">—</div></div>
+    </div>
+    <div id="fng" style="margin-top:8px"></div>
+    <p class="small muted center" style="margin:6px 0 0">Crypto Fear &amp; Greed Index</p>
+  </div>
+</div></section>
+
+<div class="container"><div class="ad-slot" data-slot="header"></div></div>
+
+<section id="top10"><div class="container">
+  <div class="section-head"><div><span class="eyebrow">The 10Coin Top 10</span><h2>Top 10 cryptocurrencies right now</h2><p class="muted">Stablecoins and wrapped tokens excluded. Equal-weighted 7-day index: <b id="idx-7d">—</b></p></div><a class="btn btn-ghost" href="markets.html">See top 100 →</a></div>
+  <div class="table-wrap"><table id="top10-table"></table></div>
+  <p class="small muted" style="margin-top:8px">Data: CoinGecko. Prices can lag by a few minutes. Not investment advice.</p>
+</div></section>
+
+<section class="alt"><div class="container">
+  <div class="section-head"><div><span class="eyebrow">Precious metals</span><h2>Gold &amp; silver reference prices</h2></div><a class="btn btn-ghost" href="tools.html#melt">Melt value calculator →</a></div>
+  <div class="grid g3" id="metals"><div class="card"><div class="skeleton"></div></div><div class="card"><div class="skeleton"></div></div><div class="card"><div class="skeleton"></div></div></div>
+  <p class="small muted" style="margin-top:8px">Indicative prices derived from gold- and silver-backed tokens (≈1 troy oz each). Confirm with your dealer before trading.</p>
+</div></section>
+
+<section><div class="container">
+  <div class="section-head"><div><span class="eyebrow">Everything coins</span><h2>One hub. Every coin question answered.</h2></div></div>
+  <div class="grid g4">
+    <a class="card link-card reveal" href="coin-values.html"><span class="ico">🔎</span><h3>Coin value guide</h3><p class="muted small">Rare pennies, dimes, dollars &amp; world coins with value ranges.</p></a>
+    <a class="card link-card reveal" href="markets.html"><span class="ico">📈</span><h3>Live crypto markets</h3><p class="muted small">Top 100, watchlist, gainers, losers, heatmap.</p></a>
+    <a class="card link-card reveal" href="tools.html#melt"><span class="ico">🥈</span><h3>Melt calculator</h3><p class="muted small">Silver &amp; gold content of 16 common coins.</p></a>
+    <a class="card link-card reveal" href="appraisal.html"><span class="ico">🧾</span><h3>Free valuation</h3><p class="muted small">Tell us what you have — get an expert estimate.</p></a>
+    <a class="card link-card reveal" href="tools.html#convert"><span class="ico">🔁</span><h3>Crypto converter</h3><p class="muted small">Top 50 coins into USD, CAD, EUR, GBP, INR.</p></a>
+    <a class="card link-card reveal" href="tools.html#history"><span class="ico">⏳</span><h3>“If I had invested”</h3><p class="muted small">See what a past buy would be worth today.</p></a>
+    <a class="card link-card reveal" href="learn.html#grading"><span class="ico">🏅</span><h3>Grading guide &amp; quiz</h3><p class="muted small">Estimate your coin’s grade in 60 seconds.</p></a>
+    <a class="card link-card reveal" href="tools.html#alerts"><span class="ico">🔔</span><h3>Price alerts</h3><p class="muted small">Get notified when a coin hits your target.</p></a>
+    <a class="card link-card reveal" href="contests.html"><span class="ico">🏆</span><h3>Monthly contests</h3><p class="muted small">Win prizes for finds, predictions &amp; stories.</p></a>
+    <a class="card link-card reveal" href="learn.html"><span class="ico">🎓</span><h3>Learn in 10 minutes</h3><p class="muted small">Plain-English guides + 40-term glossary.</p></a>
+    <a class="card link-card reveal" href="videos.html"><span class="ico">▶️</span><h3>Video hub</h3><p class="muted small">Coin hunting, crypto basics, bullion explainers.</p></a>
+    <a class="card link-card reveal" href="tools.html#save"><span class="ico">🪙</span><h3>10-coin savings habit</h3><p class="muted small">Small daily savings, compounded.</p></a>
+  </div>
+</div></section>
+
+<section><div class="container">
+  <div class="lead-band">
+    <div>
+      <span class="eyebrow">Free, no-obligation</span>
+      <h2>Found old coins, inherited a collection, or holding crypto you don’t understand?</h2>
+      <p class="muted">Tell us what you have in under 60 seconds. Our network of numismatists, bullion dealers and digital-asset specialists will send you an honest estimate and your best options to <b>sell, insure, or hold</b>.</p>
+      <div class="trust-row"><span>No fees to ask</span><span>No pressure to sell</span><span>Your details never sold</span></div>
+    </div>
+    <form data-form="Quick valuation (home)" data-success="Got it! A specialist will review and reply within 48 hours.">
+      <div class="field"><label for="q-item">What do you have?</label><select id="q-item" name="item" required><option value="">Choose…</option><option value="coins">Collectible / old coins</option><option value="bullion">Gold or silver bullion</option><option value="collection">An inherited collection</option><option value="crypto">Crypto portfolio</option><option value="paper">Banknotes / paper money</option></select></div>
+      <div class="field"><label for="q-desc">Short description</label><input id="q-desc" name="description" placeholder="e.g. jar of 1950s pennies + 3 silver dollars" required></div>
+      <div class="row"><div class="field"><label for="q-name">Name</label><input id="q-name" name="name" required autocomplete="name"></div><div class="field"><label for="q-email">Email</label><input id="q-email" type="email" name="email" required autocomplete="email"></div></div>
+      <label class="check" style="margin-bottom:12px"><input type="checkbox" name="consent" value="yes" required> I agree to be contacted about my request and accept the <a href="privacy.html">Privacy Policy</a>.</label>
+      <button class="btn btn-primary btn-block" type="submit">Get my free valuation</button>
+    </form>
+  </div>
+</div></section>
+
+<section class="alt"><div class="container">
+  <div class="grid g3">
+    <div class="card"><h3>🔥 Trending searches</h3><ul id="trending" style="list-style:none;padding:0;margin:0"><li class="skeleton"></li></ul><p class="small" style="margin-top:10px"><a href="markets.html">Full market →</a></p></div>
+    <div class="card"><h3>💰 10 coins that could be in your pocket</h3><ol class="small" style="padding-left:1.1em;margin:0">
+      <li>1943 bronze Lincoln cent</li><li>1955 doubled die cent</li><li>1969-S doubled die cent</li><li>1972 doubled die cent</li><li>1992 “Close AM” cent</li><li>2004-D Wisconsin “extra leaf” quarter</li><li>2000-P “Cheerios” Sacagawea dollar</li><li>Any pre-1965 US silver coin</li><li>1969 Canada large-date 10¢</li><li>2009 UK Kew Gardens 50p</li></ol><p class="small" style="margin-top:10px"><a href="coin-values.html">See values →</a></p></div>
+    <div class="card"><h3>📬 The 10Coin Brief</h3><p class="muted small">10 things worth knowing in coins, crypto &amp; bullion — every week, free.</p>
+      <form data-form="Newsletter (home)" data-success="Subscribed! Check your inbox."><div class="field"><label for="h-nl" class="sr-only">Email</label><input id="h-nl" type="email" name="email" placeholder="you@example.com" required></div><button class="btn btn-primary btn-block" type="submit">Subscribe free</button></form>
+      <p class="small muted" style="margin-top:8px">Free forever. One email a week. Unsubscribe anytime.</p></div>
+  </div>
+</div></section>
+
+<div class="container"><div class="ad-slot" data-slot="inContent"></div></div>
+
+<section><div class="container">
+  <div class="section-head"><div><span class="eyebrow">Get involved</span><h2>Built by the community, for the community</h2></div></div>
+  <div class="grid g4">
+    <div class="card"><h3>🏆 Win prizes</h3><p class="muted small">This month: <span data-month-name></span> Coin Spotter Challenge + BTC price prediction.</p><a class="btn btn-sm btn-primary" href="contests.html">Enter free</a></div>
+    <div class="card"><h3>💛 Support 10Coin</h3><p class="muted small">Keep free tools free. Funds operations, marketing, hiring and prizes.</p><a class="btn btn-sm btn-primary" href="support.html">Donate</a></div>
+    <div class="card"><h3>🧑‍💻 Join the team</h3><p class="muted small">Writers, analysts, video creators, developers, moderators.</p><a class="btn btn-sm btn-ghost" href="careers.html">Open roles</a></div>
+    <div class="card"><h3>📣 Advertise</h3><p class="muted small">Reach coin collectors, bullion buyers and crypto investors.</p><a class="btn btn-sm btn-ghost" href="advertise.html">Media kit</a></div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="container prose" style="max-width:900px">
+  <span class="eyebrow">FAQ</span><h2>Frequently asked questions</h2>
+  <details data-faq><summary>How do I find out what my coin is worth?</summary><p>Identify the country, denomination, year and mint mark, then estimate its condition (grade). Check our <a href="coin-values.html">coin value guide</a> for key dates and errors, use the <a href="tools.html#melt">melt calculator</a> for silver or gold coins, and request a <a href="appraisal.html">free valuation</a> for anything that looks special.</p></details>
+  <details data-faq><summary>Is the 10Coin valuation really free?</summary><p>Yes. Asking costs nothing and there is no obligation to sell. If you choose to sell or grade a coin, any partner fees are disclosed up front.</p></details>
+  <details data-faq><summary>Where does your market data come from?</summary><p>Crypto prices and global stats come from the CoinGecko public API; the sentiment gauge comes from Alternative.me. Gold and silver references are derived from metal-backed tokens and are indicative only.</p></details>
+  <details data-faq><summary>Is 10Coin a cryptocurrency or token?</summary><p>No. 10Coin.com is an independent information website. We do not issue, sell or promote any token, coin offering or rewards program. See our <a href="disclaimer.html">trademark notice</a>.</p></details>
+  <details data-faq><summary>Should I clean my old coins before selling?</summary><p>No. Cleaning almost always reduces collector value — sometimes by 50% or more. Handle coins by the edges and keep them as found.</p></details>
+</div></section>
+<!-- auto:jsonld (regenerated by build/build.py) -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I find out what my coin is worth?", "acceptedAnswer": {"@type": "Answer", "text": "Identify the country, denomination, year and mint mark, then estimate its condition (grade). Check our coin value guide for key dates and errors, use the melt calculator for silver or gold coins, and request a free valuation for anything that looks special."}}, {"@type": "Question", "name": "Is the 10Coin valuation really free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Asking costs nothing and there is no obligation to sell. If you choose to sell or grade a coin, any partner fees are disclosed up front."}}, {"@type": "Question", "name": "Where does your market data come from?", "acceptedAnswer": {"@type": "Answer", "text": "Crypto prices and global stats come from the CoinGecko public API; the sentiment gauge comes from Alternative.me. Gold and silver references are derived from metal-backed tokens and are indicative only."}}, {"@type": "Question", "name": "Is 10Coin a cryptocurrency or token?", "acceptedAnswer": {"@type": "Answer", "text": "No. 10Coin.com is an independent information website. We do not issue, sell or promote any token, coin offering or rewards program. See our trademark notice."}}, {"@type": "Question", "name": "Should I clean my old coins before selling?", "acceptedAnswer": {"@type": "Answer", "text": "No. Cleaning almost always reduces collector value — sometimes by 50% or more. Handle coins by the edges and keep them as found."}}]}</script>

@@ -1,0 +1,86 @@
+---
+layout: "default"
+slug: "tools"
+title: "Free Coin & Crypto Calculators — Converter, Melt Value, ROI, Alerts"
+full_title: "Free Coin & Crypto Calculators — Converter, Melt Value, ROI, Alerts | 10Coin"
+desc: "Free calculators: crypto converter, profit/ROI, 'if I had invested', silver & gold coin melt value, savings compounding and browser price alerts."
+canon: "/tools.html"
+scripts: ["assets/js/markets.js"]
+priority: "0.9"
+---
+<section class="page-hero"><div class="container">
+  <div class="breadcrumbs"><a href="index.html">Home</a> / Tools</div>
+  <h1>Free coin &amp; crypto tools</h1>
+  <p>Six calculators that answer the questions collectors and investors ask most. Everything runs in your browser — nothing to install, no sign-up.</p>
+  <div class="pill-row"><a class="pill" href="#convert">Converter</a><a class="pill" href="#roi-tool">Profit / ROI</a><a class="pill" href="#history">If I had invested</a><a class="pill" href="#melt">Melt value</a><a class="pill" href="#save">Savings habit</a><a class="pill" href="#alerts">Price alerts</a></div>
+</div></section>
+
+<section style="padding-top:0"><div class="container grid g2">
+  <div class="card" id="convert"><h2 style="font-size:1.35rem">🔁 Crypto converter</h2>
+    <form id="conv" onsubmit="return false">
+      <div class="row"><div class="field"><label for="conv-amt">Amount</label><input id="conv-amt" type="number" value="1" min="0" step="any"></div>
+      <div class="field"><label for="conv-cur">To currency</label><select id="conv-cur"><option value="usd">USD</option><option value="cad">CAD</option><option value="eur">EUR</option><option value="gbp">GBP</option><option value="inr">INR</option><option value="aud">AUD</option></select></div></div>
+      <div class="field"><label for="conv-coin">Coin</label><select id="conv-coin"><option>Loading…</option></select></div>
+    </form>
+    <p id="conv-out" class="num" style="font-size:1.15rem"></p>
+  </div>
+
+  <div class="card" id="roi-tool"><h2 style="font-size:1.35rem">📊 Profit / ROI calculator</h2>
+    <form id="roi" onsubmit="return false">
+      <div class="row"><div class="field"><label for="roi-inv">Investment ($)</label><input id="roi-inv" type="number" value="1000" min="0" step="any"></div><div class="field"><label for="roi-fee">Fee per trade (%)</label><input id="roi-fee" type="number" value="0.5" min="0" step="any"></div></div>
+      <div class="row"><div class="field"><label for="roi-buy">Buy price ($)</label><input id="roi-buy" type="number" value="50000" min="0" step="any"></div><div class="field"><label for="roi-sell">Sell price ($)</label><input id="roi-sell" type="number" value="65000" min="0" step="any"></div></div>
+    </form>
+    <p id="roi-out"></p>
+  </div>
+
+  <div class="card" id="history"><h2 style="font-size:1.35rem">⏳ “If I had invested…”</h2>
+    <form id="hist">
+      <div class="row"><div class="field"><label for="hist-amt">Amount ($)</label><input id="hist-amt" type="number" value="1000" min="1"></div><div class="field"><label for="hist-date">Date</label><input id="hist-date" type="date"></div></div>
+      <div class="field"><label for="hist-coin">Coin</label><select id="hist-coin"><option value="bitcoin">Bitcoin</option><option value="ethereum">Ethereum</option><option value="solana">Solana</option><option value="ripple">XRP</option><option value="binancecoin">BNB</option><option value="cardano">Cardano</option><option value="dogecoin">Dogecoin</option><option value="tron">TRON</option><option value="chainlink">Chainlink</option><option value="avalanche-2">Avalanche</option></select></div>
+      <button class="btn btn-primary" type="submit">Calculate</button>
+    </form>
+    <p id="hist-out" style="margin-top:12px"></p>
+  </div>
+
+  <div class="card" id="melt"><h2 style="font-size:1.35rem">🥈 Coin melt value</h2>
+    <form id="melt-form" onsubmit="return false"><div>
+      <div class="field"><label for="melt-coin">Coin</label><select id="melt-coin"></select></div>
+      <div class="row"><div class="field"><label for="melt-qty">Quantity</label><input id="melt-qty" type="number" value="10" min="1"></div><div class="field"><label for="melt-silver">Silver $/oz</label><input id="melt-silver" type="number" value="40" step="any"></div></div>
+      <div class="field"><label for="melt-gold">Gold $/oz</label><input id="melt-gold" type="number" value="3500" step="any"></div>
+    </div></form>
+    <p id="melt-out"></p>
+  </div>
+</div></section>
+
+<div class="container"><div class="ad-slot" data-slot="inContent"></div></div>
+
+<section><div class="container grid g2">
+  <div class="card" id="save"><h2 style="font-size:1.35rem">🪙 The 10-coin savings habit</h2><p class="muted small">What if you saved a few coins every day and invested them?</p>
+    <form id="save-form" onsubmit="return false"><div>
+      <div class="row"><div class="field"><label for="save-daily">Saved per day ($)</label><input id="save-daily" type="number" value="10" min="0" step="any"></div><div class="field"><label for="save-years">Years</label><input id="save-years" type="number" value="10" min="1" max="50"></div></div>
+      <div class="field"><label for="save-rate">Assumed annual return (%)</label><input id="save-rate" type="number" value="7" step="any"></div>
+    </div></form>
+    <p id="save-out"></p>
+    <div id="save-chart" style="display:flex;align-items:flex-end;gap:3px;height:120px" aria-label="Balance by year"></div>
+    <p class="small muted">Illustration only; returns are not guaranteed.</p>
+  </div>
+
+  <div class="card" id="alerts"><h2 style="font-size:1.35rem">🔔 Price alerts</h2><p class="muted small">Alerts are saved in this browser and fire while any 10Coin page is open. For weekly market emails, <a href="#" data-open-newsletter>join The 10Coin Brief</a>.</p>
+    <form id="alert-form">
+      <div class="field"><label for="alert-coin">Coin</label><select id="alert-coin"><option>Loading…</option></select></div>
+      <div class="row"><div class="field"><label for="alert-dir">When price is</label><select id="alert-dir"><option value="above">Above</option><option value="below">Below</option></select></div><div class="field"><label for="alert-price">Target ($)</label><input id="alert-price" type="number" step="any" required></div></div>
+      <button class="btn btn-primary" type="submit">Save alert</button>
+    </form>
+    <ul id="alert-list" style="margin-top:12px;padding-left:1.1em"></ul>
+  </div>
+</div></section>
+
+<section class="alt"><div class="container prose">
+  <h2>Calculator FAQ</h2>
+  <details data-faq><summary>How is coin melt value calculated?</summary><p>Melt value = pure metal content (troy ounces) × spot price × quantity. For example a pre-1965 US quarter contains 0.18084 troy oz of silver.</p></details>
+  <details data-faq><summary>Why is my dealer offering less than melt value?</summary><p>Dealers need a margin to cover refining, storage and risk. Offers commonly range below melt for junk silver and above melt for popular bullion coins. Compare several quotes.</p></details>
+  <details data-faq><summary>How far back does the “If I had invested” tool go?</summary><p>The free data source typically returns daily prices for about the past year. For longer histories, check a full-featured charting site.</p></details>
+</div></section>
+<!-- auto:jsonld (regenerated by build/build.py) -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}{{ site.baseurl }}/"}, {"@type": "ListItem", "position": 2, "name": "Free Coin & Crypto Calculators — Converter, Melt Value, ROI, Alerts", "item": "{{ site.url }}{{ site.baseurl }}/tools.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How is coin melt value calculated?", "acceptedAnswer": {"@type": "Answer", "text": "Melt value = pure metal content (troy ounces) × spot price × quantity. For example a pre-1965 US quarter contains 0.18084 troy oz of silver."}}, {"@type": "Question", "name": "Why is my dealer offering less than melt value?", "acceptedAnswer": {"@type": "Answer", "text": "Dealers need a margin to cover refining, storage and risk. Offers commonly range below melt for junk silver and above melt for popular bullion coins. Compare several quotes."}}, {"@type": "Question", "name": "How far back does the “If I had invested” tool go?", "acceptedAnswer": {"@type": "Answer", "text": "The free data source typically returns daily prices for about the past year. For longer histories, check a full-featured charting site."}}]}</script>
