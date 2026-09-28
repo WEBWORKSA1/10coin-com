@@ -1,0 +1,107 @@
+---
+layout: "default"
+slug: "appraisal"
+title: "Free Coin Valuation & Sell-Your-Coins Request"
+full_title: "Free Coin Valuation & Sell-Your-Coins Request | 10Coin"
+desc: "Get a free, no-obligation valuation for old coins, inherited collections, gold & silver bullion, banknotes or a crypto portfolio. 60-second form, expert reply."
+canon: "/appraisal.html"
+scripts: []
+priority: "0.9"
+---
+<section class="page-hero" style="padding-bottom:10px"><div class="container center">
+  <div class="breadcrumbs"><a href="index.html">Home</a> / Free valuation</div>
+  <span class="eyebrow">Free · No obligation · Expert-reviewed</span>
+  <h1>Find out what your coins are worth</h1>
+  <p style="margin:0 auto">Answer 5 quick questions. A specialist reviews every request personally and replies with an honest estimate and your best options — sell, grade, insure or hold.</p>
+</div></section>
+
+<section style="padding-top:20px"><div class="container">
+  <div class="funnel card">
+    <div class="progress"><span></span></div>
+    <p class="small muted" id="step-label" style="margin-top:-12px">Step 1 of 5</p>
+    <form id="lead-funnel" data-form="Valuation request" data-success="✅ Request received! A specialist will reply within 48 hours (check your spam folder just in case).">
+      <div class="step" data-auto>
+        <h2 style="font-size:1.4rem">1. What would you like valued?</h2>
+        <div class="choice-grid">
+          <label class="choice"><input type="radio" name="item" value="coins" required><span>🪙 Old / collectible coins</span></label>
+          <label class="choice"><input type="radio" name="item" value="bullion"><span>🥇 Gold or silver bullion</span></label>
+          <label class="choice"><input type="radio" name="item" value="collection"><span>📦 An inherited collection / estate</span></label>
+          <label class="choice"><input type="radio" name="item" value="crypto"><span>₿ Crypto portfolio review</span></label>
+          <label class="choice"><input type="radio" name="item" value="paper"><span>💵 Banknotes / paper money</span></label>
+          <label class="choice"><input type="radio" name="item" value="other"><span>❓ Not sure / something else</span></label>
+        </div>
+      </div>
+      <div class="step" data-auto>
+        <h2 style="font-size:1.4rem">2. What’s your main goal?</h2>
+        <div class="choice-grid">
+          <label class="choice"><input type="radio" name="goal" value="sell" required><span>💰 Sell for the best price</span></label>
+          <label class="choice"><input type="radio" name="goal" value="appraise"><span>🔍 Just know the value</span></label>
+          <label class="choice"><input type="radio" name="goal" value="insure"><span>🛡️ Insurance / estate appraisal</span></label>
+          <label class="choice"><input type="radio" name="goal" value="grade"><span>🏅 Get it graded / authenticated</span></label>
+          <label class="choice"><input type="radio" name="goal" value="buy"><span>🛒 Buy coins or bullion</span></label>
+          <label class="choice"><input type="radio" name="goal" value="tax"><span>🧾 Tax / reporting help</span></label>
+        </div>
+        <div class="funnel-nav"><button type="button" class="btn btn-ghost" data-prev>← Back</button></div>
+      </div>
+      <div class="step">
+        <h2 style="font-size:1.4rem">3. Tell us about it</h2>
+        <div class="field"><label for="coin">Describe the item(s)</label><textarea id="coin" name="coin" required placeholder="e.g. 1955 Lincoln cent with doubled date; 20 pre-1965 quarters; 2 oz gold Maple Leafs; crypto on 3 exchanges…"></textarea></div>
+        <div class="row">
+          <div class="field"><label for="qty">Approx. quantity</label><select id="qty" name="quantity"><option>1–5</option><option>6–25</option><option>26–100</option><option>100–500</option><option>500+</option></select></div>
+          <div class="field"><label for="est">Your rough value guess</label><select id="est" name="estimated_value"><option>No idea</option><option>Under $500</option><option>$500 – $2,500</option><option>$2,500 – $10,000</option><option>$10,000 – $50,000</option><option>$50,000+</option></select></div>
+        </div>
+        <div class="field"><label for="photos">Photo links (optional)</label><input id="photos" name="photo_links" placeholder="Google Drive / Dropbox / iCloud link to front & back photos"><p class="small muted" style="margin:4px 0 0">No link? No problem — we’ll reply with a secure way to send photos.</p></div>
+        <div class="funnel-nav"><button type="button" class="btn btn-ghost" data-prev>← Back</button><button type="button" class="btn btn-primary" data-next>Continue →</button></div>
+      </div>
+      <div class="step">
+        <h2 style="font-size:1.4rem">4. Where are you located?</h2>
+        <div class="row">
+          <div class="field"><label for="country">Country</label><select id="country" name="country" required><option value="">Choose…</option><option>United States</option><option>Canada</option><option>United Kingdom</option><option>India</option><option>Australia</option><option>Germany</option><option>France</option><option>UAE</option><option>Singapore</option><option>Other</option></select></div>
+          <div class="field"><label for="region">State / province / city</label><input id="region" name="region" autocomplete="address-level1"></div>
+        </div>
+        <div class="field"><label for="timeline">Timeline</label><select id="timeline" name="timeline"><option>As soon as possible</option><option>Within a month</option><option>1–3 months</option><option>Just researching</option></select></div>
+        <div class="funnel-nav"><button type="button" class="btn btn-ghost" data-prev>← Back</button><button type="button" class="btn btn-primary" data-next>Continue →</button></div>
+      </div>
+      <div class="step">
+        <h2 style="font-size:1.4rem">5. Where should we send your valuation?</h2>
+        <div class="row">
+          <div class="field"><label for="name">Full name</label><input id="name" name="name" required autocomplete="name"></div>
+          <div class="field"><label for="email">Email</label><input id="email" type="email" name="email" required autocomplete="email"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="phone">Phone (optional, faster reply)</label><input id="phone" type="tel" name="phone" autocomplete="tel"></div>
+          <div class="field"><label for="contact_pref">Preferred contact</label><select id="contact_pref" name="contact_pref"><option>Email</option><option>Phone call</option><option>WhatsApp / SMS</option></select></div>
+        </div>
+        <label class="check"><input type="checkbox" name="consent" value="yes" required> I agree that 10Coin and, if I choose, a vetted partner may contact me about this request. I’ve read the <a href="privacy.html">Privacy Policy</a>.</label>
+        <label class="check" style="margin-bottom:14px"><input type="checkbox" name="newsletter" value="yes" checked> Also send me The 10Coin Brief (weekly, free).</label>
+        <div class="funnel-nav"><button type="button" class="btn btn-ghost" data-prev>← Back</button><button type="submit" class="btn btn-primary">Get my free valuation ✓</button></div>
+      </div>
+    </form>
+  </div>
+  <div class="grid g3" style="max-width:900px;margin:26px auto 0">
+    <div class="center"><div style="font-size:1.8rem">🔒</div><b>Private &amp; secure</b><p class="small muted">Your details are never sold. Unsubscribe any time.</p></div>
+    <div class="center"><div style="font-size:1.8rem">🧑‍🔬</div><b>Human experts</b><p class="small muted">Numismatists, bullion and digital-asset specialists.</p></div>
+    <div class="center"><div style="font-size:1.8rem">🤝</div><b>Zero pressure</b><p class="small muted">Get the value; decide later. Free either way.</p></div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="container">
+  <div class="section-head"><div><span class="eyebrow">How it works</span><h2>From “what is this?” to a confident decision</h2></div></div>
+  <div class="grid g4">
+    <div class="card"><h3>① Tell us</h3><p class="muted small">60-second form. Photos help but aren’t required.</p></div>
+    <div class="card"><h3>② Expert review</h3><p class="muted small">We identify date, variety, metal content and likely grade.</p></div>
+    <div class="card"><h3>③ Your estimate</h3><p class="muted small">A written value range and what drives it.</p></div>
+    <div class="card"><h3>④ Your options</h3><p class="muted small">Sell, grade, insure or hold — with vetted partners if you want them.</p></div>
+  </div>
+</div></section>
+
+<section><div class="container prose">
+  <h2>Valuation FAQ</h2>
+  <details data-faq><summary>How much does a valuation cost?</summary><p>Nothing. The initial estimate is free and there is no obligation. If you later choose paid grading or an auction, costs are explained before you commit.</p></details>
+  <details data-faq><summary>Do I need photos?</summary><p>Clear front and back photos in daylight make the estimate faster and more accurate, but you can submit first and send photos later.</p></details>
+  <details data-faq><summary>Will you buy my coins?</summary><p>If you want to sell, we can introduce you to reputable dealers or auction houses matched to your items and location, so you can compare offers.</p></details>
+  <details data-faq><summary>Can you help with inherited collections?</summary><p>Yes — estates are one of the most common requests. We’ll help you sort the valuable pieces from face-value coins and plan next steps.</p></details>
+</div></section>
+<!-- auto:jsonld (regenerated by build/build.py) -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}{{ site.baseurl }}/"}, {"@type": "ListItem", "position": 2, "name": "Free Coin Valuation & Sell-Your-Coins Request", "item": "{{ site.url }}{{ site.baseurl }}/appraisal.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does a valuation cost?", "acceptedAnswer": {"@type": "Answer", "text": "Nothing. The initial estimate is free and there is no obligation. If you later choose paid grading or an auction, costs are explained before you commit."}}, {"@type": "Question", "name": "Do I need photos?", "acceptedAnswer": {"@type": "Answer", "text": "Clear front and back photos in daylight make the estimate faster and more accurate, but you can submit first and send photos later."}}, {"@type": "Question", "name": "Will you buy my coins?", "acceptedAnswer": {"@type": "Answer", "text": "If you want to sell, we can introduce you to reputable dealers or auction houses matched to your items and location, so you can compare offers."}}, {"@type": "Question", "name": "Can you help with inherited collections?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — estates are one of the most common requests. We’ll help you sort the valuable pieces from face-value coins and plan next steps."}}]}</script>

@@ -1,0 +1,57 @@
+---
+layout: "default"
+slug: "contests"
+title: "Contests & Prizes — Coin Spotter Challenge and Price Predictions"
+full_title: "Contests & Prizes — Coin Spotter Challenge and Price Predictions | 10Coin"
+desc: "Enter free monthly 10Coin contests: the Coin Spotter Challenge, crypto price predictions and collector stories. Prizes for winners. No purchase necessary."
+canon: "/contests.html"
+scripts: []
+priority: "0.8"
+---
+<section class="page-hero"><div class="container">
+  <div class="breadcrumbs"><a href="index.html">Home</a> / Contests</div>
+  <span class="eyebrow">Free to enter · No purchase necessary</span>
+  <h1>Contests &amp; prizes</h1>
+  <p>Monthly challenges for collectors and market watchers. Current round: <b data-month-name></b>. Entries close in:</p>
+  <div class="countdown" data-countdown="month"></div>
+</div></section>
+
+<section style="padding-top:10px"><div class="container grid g3">
+  <div class="card"><span class="badge gold">Monthly</span><h3 style="margin-top:10px">🔍 Coin Spotter Challenge</h3><p class="muted small">Share the most interesting coin you found in change, a roll or a jar this month. Judged on rarity, story and photo quality.</p><p><b>Prize:</b> featured spotlight + sponsor prize (announced each month).</p></div>
+  <div class="card"><span class="badge gold">Monthly</span><h3 style="margin-top:10px">📈 Bitcoin Price Prediction</h3><p class="muted small">Predict Bitcoin’s USD price at 00:00 UTC on the 1st of next month (CoinGecko). Closest guess wins; earliest entry breaks ties.</p><p><b>Prize:</b> sponsor prize + “Oracle of the Month” badge.</p></div>
+  <div class="card"><span class="badge">Quarterly</span><h3 style="margin-top:10px">✍️ Collector Story Award</h3><p class="muted small">Tell us how you started collecting or your best-ever find (300–800 words). Winning stories are published on 10Coin.</p><p><b>Prize:</b> publication + sponsor prize.</p></div>
+</div></section>
+
+<section class="alt"><div class="container grid g2" style="align-items:start">
+  <form class="card" data-form="Contest entry" data-success="🎉 You’re entered! Winners are announced in The 10Coin Brief.">
+    <h2 style="font-size:1.4rem">Enter now</h2>
+    <div class="field"><label for="c-contest">Contest</label><select id="c-contest" name="contest" required><option value="spotter">Coin Spotter Challenge</option><option value="prediction">Bitcoin Price Prediction</option><option value="story">Collector Story Award</option></select></div>
+    <div class="row"><div class="field"><label for="c-name">Name</label><input id="c-name" name="name" required></div><div class="field"><label for="c-email">Email</label><input id="c-email" type="email" name="email" required></div></div>
+    <div class="row"><div class="field"><label for="c-country">Country</label><input id="c-country" name="country" required></div><div class="field"><label for="c-pred">BTC prediction (USD, if applicable)</label><input id="c-pred" type="number" name="prediction" step="1"></div></div>
+    <div class="field"><label for="c-entry">Your entry / coin description / story</label><textarea id="c-entry" name="entry" required></textarea></div>
+    <div class="field"><label for="c-photo">Photo or document link (optional)</label><input id="c-photo" type="url" name="photo_link" placeholder="https://…"></div>
+    <label class="check"><input type="checkbox" name="age" value="18+" required> I am 18+ (or the age of majority where I live).</label>
+    <label class="check" style="margin-bottom:12px"><input type="checkbox" name="rules" value="accepted" required> I accept the <a href="#rules">official rules</a> and agree my entry may be published.</label>
+    <button class="btn btn-primary btn-block" type="submit">Submit my entry</button>
+  </form>
+  <div>
+    <div class="card"><h3>🎁 Sponsor a prize</h3><p class="muted small">Dealers, mints, exchanges and brands: put your product in front of engaged collectors. Sponsors get logo placement, a newsletter mention and a winner feature.</p><a class="btn btn-sm btn-primary" href="advertise.html#sponsor">Become a sponsor</a></div>
+    <div class="card" style="margin-top:18px"><h3>💛 Fund the prize pool</h3><p class="muted small">20% of every donation goes directly to contests and prizes.</p><a class="btn btn-sm btn-ghost" href="support.html">Support 10Coin</a></div>
+    <div class="ad-slot" data-slot="sidebar"></div>
+  </div>
+</div></section>
+
+<section id="rules"><div class="container prose">
+  <h2>Official rules (summary)</h2>
+  <ul class="small">
+    <li><b>No purchase necessary.</b> A purchase or donation does not improve your chances of winning.</li>
+    <li>Open to individuals 18+ (or age of majority) where such contests are legal. Void where prohibited. Employees and immediate families of 10Coin and sponsors are not eligible.</li>
+    <li>One entry per person per contest per month. Entries must be original and submitted before the countdown ends (00:00 local time on the 1st).</li>
+    <li>Skill-based judging by the 10Coin editorial team (Spotter, Story) or closest numerical result (Prediction). Judges’ decisions are final.</li>
+    <li>Winners are notified by email and must respond within 14 days; otherwise an alternate may be selected. Prizes are non-transferable; cash alternatives are at the sponsor’s discretion. Winners are responsible for applicable taxes.</li>
+    <li>By entering you grant 10Coin a non-exclusive licence to publish your entry with credit. We handle personal data under our <a href="privacy.html">Privacy Policy</a>.</li>
+    <li>10Coin may modify or cancel a contest if fraud, technical failure or other factors impair its integrity. Full rules for each round may be published with the announcement.</li>
+  </ul>
+</div></section>
+<!-- auto:jsonld (regenerated by build/build.py) -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}{{ site.baseurl }}/"}, {"@type": "ListItem", "position": 2, "name": "Contests & Prizes — Coin Spotter Challenge and Price Predictions", "item": "{{ site.url }}{{ site.baseurl }}/contests.html"}]}</script>

@@ -1,0 +1,61 @@
+---
+layout: "default"
+slug: "support"
+title: "Support 10Coin — Donate to Keep Free Tools Free"
+full_title: "Support 10Coin — Donate to Keep Free Tools Free"
+desc: "Support 10Coin with a one-time or monthly donation. Your support funds operations, promotion, marketing, hiring talent and monthly contest prizes."
+canon: "/support.html"
+scripts: []
+priority: "0.7"
+---
+<section class="page-hero"><div class="container center">
+  <div class="breadcrumbs"><a href="index.html">Home</a> / Support</div>
+  <span class="eyebrow">Community-powered</span>
+  <h1>Keep 10Coin free for everyone</h1>
+  <p style="margin:0 auto">No paywalls on values, calculators or market data. Your support pays for servers and data, spreads the word, hires writers and developers, and funds prizes for the community.</p>
+</div></section>
+
+<section style="padding-top:10px"><div class="container" style="max-width:900px">
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><b>This year’s goal</b><span class="num"><b id="raised">$0</b> of <span id="goal">$10,000</span></span></div>
+    <div class="bar" style="margin:10px 0"><span id="goal-bar" style="width:0%"></span></div>
+    <h3 style="margin-top:18px">Where every dollar goes</h3>
+    <div class="alloc"><span>🖥️ Operations &amp; data</span><div class="bar"><span style="width:35%"></span></div><b>35%</b></div>
+    <div class="alloc"><span>📣 Promotion &amp; marketing</span><div class="bar"><span style="width:25%"></span></div><b>25%</b></div>
+    <div class="alloc"><span>🧑‍💻 Hiring talent</span><div class="bar"><span style="width:20%"></span></div><b>20%</b></div>
+    <div class="alloc"><span>🏆 Contests &amp; prizes</span><div class="bar"><span style="width:20%"></span></div><b>20%</b></div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="container">
+  <div class="section-head"><div><span class="eyebrow">Choose your level</span><h2>Support tiers</h2></div></div>
+  <div class="grid g4">
+    <div class="card tier"><h3>Supporter</h3><div class="amt">$5</div><p class="muted small">Buy the team a coffee. Name in our monthly thank-you post (optional).</p><a class="btn btn-ghost btn-block" data-donate="buymeacoffee" data-amount="5" href="#pledge">Give $5</a></div>
+    <div class="card tier featured"><h3>Collector</h3><div class="amt">$25</div><p class="muted small">Funds a month of market data. Supporter badge + early contest news.</p><a class="btn btn-primary btn-block" data-donate="paypal" data-amount="25" href="#pledge">Give $25</a></div>
+    <div class="card tier"><h3>Patron</h3><div class="amt">$100</div><p class="muted small">Funds a monthly prize. Name on the Patron wall + quarterly insider brief.</p><a class="btn btn-ghost btn-block" data-donate="stripe" data-amount="100" href="#pledge">Give $100</a></div>
+    <div class="card tier"><h3>Founding Sponsor</h3><div class="amt">$500+</div><p class="muted small">Logo on the support page, a newsletter feature and a named contest.</p><a class="btn btn-ghost btn-block" href="advertise.html#sponsor">Talk to us</a></div>
+  </div>
+  <div class="pill-row" style="justify-content:center;margin-top:22px">
+    <a class="pill" data-donate="paypal" href="#pledge">PayPal</a><a class="pill" data-donate="stripe" href="#pledge">Card (Stripe)</a><a class="pill" data-donate="buymeacoffee" href="#pledge">Buy Me a Coffee</a><a class="pill" data-donate="kofi" href="#pledge">Ko-fi</a><a class="pill" data-donate="patreon" href="#pledge">Monthly (Patreon)</a>
+  </div>
+  <div id="crypto-donate" class="center small muted" style="margin-top:14px"></div>
+</div></section>
+
+<section id="pledge"><div class="container grid g2" style="align-items:start">
+  <div><span class="eyebrow">Pledge form</span><h2>Pledge support or sponsor something specific</h2><p class="muted">Prefer bank transfer, a specific cause (a prize, a hire, a marketing push) or in-kind support (coins for prizes, services)? Tell us and we’ll send secure payment details personally.</p>
+    <ul class="small muted"><li>Receipts provided for every contribution.</li><li>10Coin is an independent website, not a registered charity — contributions are generally not tax-deductible.</li><li>Donations are voluntary and give no ownership, equity, token or investment return.</li></ul></div>
+  <form class="card" data-form="Donation pledge" data-success="Thank you! We’ll email secure payment details within 24 hours.">
+    <div class="row"><div class="field"><label for="p-name">Name</label><input id="p-name" name="name" required></div><div class="field"><label for="p-email">Email</label><input id="p-email" type="email" name="email" required></div></div>
+    <div class="row"><div class="field"><label for="p-amt">Amount (USD)</label><input id="p-amt" type="number" name="amount" min="1" value="25" required></div><div class="field"><label for="p-freq">Frequency</label><select id="p-freq" name="frequency"><option>One-time</option><option>Monthly</option><option>Yearly</option></select></div></div>
+    <div class="field"><label for="p-purpose">Direct my support to</label><select id="p-purpose" name="purpose"><option>Wherever it’s needed most</option><option>Operations &amp; data</option><option>Promotion &amp; marketing</option><option>Hiring talent</option><option>Contests &amp; prizes</option><option>In-kind (prizes / services)</option></select></div>
+    <div class="field"><label for="p-method">Preferred method</label><select id="p-method" name="method"><option>Card</option><option>PayPal</option><option>Bank transfer</option><option>Crypto</option><option>Other</option></select></div>
+    <div class="field"><label for="p-msg">Message (optional)</label><textarea id="p-msg" name="message" style="min-height:80px"></textarea></div>
+    <label class="check" style="margin-bottom:12px"><input type="checkbox" name="public_credit" value="yes"> List my name as a supporter.</label>
+    <button class="btn btn-primary btn-block" type="submit">Send pledge</button>
+  </form>
+</div></section>
+<script>
+document.addEventListener("DOMContentLoaded",function(){var F=(window.TENCOIN_CONFIG||{}).fundraising||{goal:10000,raised:0};var fmt=function(n){return "$"+Number(n).toLocaleString()};document.getElementById("raised").textContent=fmt(F.raised);document.getElementById("goal").textContent=fmt(F.goal);document.getElementById("goal-bar").style.width=Math.min(100,F.raised/F.goal*100)+"%";var cr=((window.TENCOIN_CONFIG||{}).donate||{}).crypto||{};var h=Object.keys(cr).filter(function(k){return cr[k]}).map(function(k){return "<div><b>"+k.replace("_"," ")+":</b> <code style='word-break:break-all'>"+window.TC.esc(cr[k])+"</code></div>"}).join("");if(h)document.getElementById("crypto-donate").innerHTML="<p><b>Donate crypto</b></p>"+h;});
+</script>
+<!-- auto:jsonld (regenerated by build/build.py) -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}{{ site.baseurl }}/"}, {"@type": "ListItem", "position": 2, "name": "Support 10Coin — Donate to Keep Free Tools Free", "item": "{{ site.url }}{{ site.baseurl }}/support.html"}]}</script>
