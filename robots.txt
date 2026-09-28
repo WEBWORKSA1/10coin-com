@@ -1,4 +1,8 @@
+---
+layout: null
+permalink: /robots.txt
+---
 User-agent: *
 Allow: /
 
-Sitemap: https://webworksa1.github.io/10coin-com/sitemap.xml
+Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml

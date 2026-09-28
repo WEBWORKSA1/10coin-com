@@ -1,0 +1,6 @@
+# 10Coin.com — Jekyll config (GitHub Pages builds this automatically, free plan)
+# Custom domain: set url to https://10coin.com, baseurl to "", and add a CNAME file.
+title: 10Coin
+url: "https://webworksa1.github.io"
+baseurl: "/10coin-com"
+exclude: [build, dist, README.md, PROMPT.md, .gitignore]
